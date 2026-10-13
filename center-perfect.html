@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Căn giữa hoàn hảo với Flexbox</title>
+  <style>
+    /* Reset nhẹ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ========== 3 DÒNG CSS CỐT LÕI ========== */
+    .container {
+      min-height: 100vh;          /* Chiếm toàn bộ chiều cao màn hình */
+      display: flex;              /* Bật Flexbox */
+      justify-content: center;    /* Căn giữa theo trục ngang (trục chính) */
+      align-items: center;        /* Căn giữa theo trục dọc (trục phụ) */
+      background-color: #f0f2f5;
+    }
+
+    /* Style cho thẻ card (không ảnh hưởng đến việc căn giữa) */
+    .center-card {
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+
+    .center-card h3 {
+      margin-bottom: 12px;
+      color: #1a1a2e;
+      font-family: system-ui, sans-serif;
+    }
+
+    .center-card p {
+      color: #555;
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="center-card">
+      <h3>Căn giữa hoàn hảo!</h3>
+      <p>Phần tử này nằm chính giữa khung nhìn màn hình.</p>
+    </div>
+  </div>
+</body>
+</html>
